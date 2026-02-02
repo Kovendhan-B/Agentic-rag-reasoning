@@ -1,4 +1,6 @@
 from sentence_transformers import SentenceTransformer
+import logging
+logging.getLogger("transformers").setLevel(logging.ERROR)
 
 _model = SentenceTransformer("all-MiniLM-L6-v2")
 
